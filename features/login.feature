@@ -15,4 +15,5 @@ Feature: Login functionality
         And User should be able to input "new_username" in "new_username" field
         And User should be able to input "pass" in "pass" field
         And User should be able to input "wrong_pass" in "wrong_pass" field
-        Then Verify the "error_message" shows a message "Passwords do not match"
+        Then Verify the "error_message" is visible
+        And Verify the "error_message" shows a message "Passwords do not match"
